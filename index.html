@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <body>
+    <form id="userForm">
+      <h2>Add User</h2>
+
+      <label for="name">Name</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter name"
+        required
+      />
+
+      <label for="role">Role</label>
+      <input
+        type="text"
+        id="role"
+        name="role"
+        placeholder="Enter role"
+        required
+      />
+
+      <label for="bio">Bio</label>
+      <textarea id="bio" name="bio" placeholder="Enter bio" required></textarea>
+
+      <label for="photo">Photo URL</label>
+      <input
+        type="url"
+        id="photo"
+        name="photo"
+        placeholder="https://example.com/photo.jpg"
+        required
+      />
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="userCards"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
